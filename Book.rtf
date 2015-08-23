@@ -1,0 +1,52 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww13160\viewh12500\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 								Diccionario de Datos\
+\
+ \
+La formaci\'f3n del archivo DataSet, tuvo la siguiente formaci\'f3n, basado en la tercera regla: mantener conjuntos de datos espec\'edficos separados.\
+\
+As\'ed, se formaron los siguientes archivos, contenido en una nueva carpeta denominada SET:\
+\
+SET\
+	x_set 	= 	x_train	 + 	x_test\
+        y_set		= 	y_train	+ 	y_test\
+\
+	subject_set 	=	subject_train 	+ 	subject_test\
+\
+         Inertial Sig\
+			body_acc_x_set	= 	body_acc_x_train	+      body_acc_x_test\
+			body_acc_y_set	= 	body_acc_y_train	+      body_acc_y_test\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 			body_acc_z_set	= 	body_acc_z_train	+      body_acc_z_test\
+\
+			body_acc_set		= 	body_acc_x_set  +   body_acc_y_set   +   body_acc_z_set		\
+\
+			body_gyro_x_set	= 	body_gyro_x_train	+     body_gyro_x_test\
+			body_gyro_y_set	= 	body_gyro_y_train	+     body_gyro_y_test 			body_gyro_z_set	= 	body_gyro_z_train	+     body_gyro_z_test			\
+			body_gyro_set		= 	body_gyro_x_set  + body_gyro_y_set  +  body_gyro_z_set\
+\
+	                total_acc_x_set		= 	total_acc_x_train	+     total_acc_x_test\
+ 			total_acc_y_set		= 	total_acc_y_train	+     total_acc_y_test\
+			total_acc_z_set		= 	total_acc_z_train	+     total_acc_z_test\
+\
+                         total_acc_set		= 	total_ac_x_set  +  total_acc_y_set   + total_acc_z_set\
+\
+\
+       El archivo de dato final, fue la resultante del acoplamiento horizontal de los siguientes archivos en este orden:\
+\
+      body_acc_set + body_gyro_set  +  total_acc_set  + x_set + y_set + subject_set\
+\
+\
+Despu\'e9s de armado este archivo se relacion\'f3 con archivo \'93feature\'94 para incorporar la descripci\'f3n de la actividad.\
+Ambos archivos se relacionaron por c\'f3digo.\
+\
+\
+\
+\
+\
+	\
+}
